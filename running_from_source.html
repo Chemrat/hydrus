@@ -13,14 +13,17 @@
         <link rel="canonical" href="https://hydrusnetwork.github.io/hydrus/running_from_source.html">
       
       
-        <link rel="prev" href="wine.html">
+        <link rel="prev" href="server.html">
       
       
-        <link rel="next" href="downloader_intro.html">
+        <link rel="next" href="docker.html">
+      
+      
+        
       
       
       <link rel="icon" href="assets/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -28,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -50,7 +53,6 @@
     
       
 
-    
     
     
   </head>
@@ -200,7 +202,7 @@
         <a href="https://github.com/hydrusnetwork/hydrus" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     hydrusnetwork/hydrus
@@ -357,7 +359,7 @@
       <a href="https://github.com/hydrusnetwork/hydrus" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     hydrusnetwork/hydrus
@@ -379,9 +381,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
+  
   
 
       </a>
@@ -417,9 +424,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Getting Started
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -428,7 +440,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Getting Started
+            
+  
+    Getting Started
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -444,9 +460,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
     
   </span>
+  
   
 
       </a>
@@ -467,9 +488,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Overview For Getting Started
+  
+
     
   </span>
+  
   
 
       </a>
@@ -490,9 +516,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Installing and Updating
+  
+
     
   </span>
+  
   
 
       </a>
@@ -513,9 +544,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Files
+  
+
     
   </span>
+  
   
 
       </a>
@@ -536,9 +572,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Supported Filetypes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -559,9 +600,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Importing and Exporting
+  
+
     
   </span>
+  
   
 
       </a>
@@ -582,9 +628,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tags
+  
+
     
   </span>
+  
   
 
       </a>
@@ -605,9 +656,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Searching and Sorting
+  
+
     
   </span>
+  
   
 
       </a>
@@ -628,9 +684,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     More Tags
+  
+
     
   </span>
+  
   
 
       </a>
@@ -651,9 +712,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Downloading
+  
+
     
   </span>
+  
   
 
       </a>
@@ -674,9 +740,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Ratings
+  
+
     
   </span>
+  
   
 
       </a>
@@ -713,9 +784,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     PTR
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -724,7 +800,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_12">
             <span class="md-nav__icon md-icon"></span>
-            PTR
+            
+  
+    PTR
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -740,9 +820,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     PTR Access Keys
+  
+
     
   </span>
+  
   
 
       </a>
@@ -763,9 +848,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     PTR Guide
+  
+
     
   </span>
+  
   
 
       </a>
@@ -786,9 +876,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Petition Practices
+  
+
     
   </span>
+  
   
 
       </a>
@@ -833,9 +928,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Next Steps
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -844,7 +944,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_13">
             <span class="md-nav__icon md-icon"></span>
-            Next Steps
+            
+  
+    Next Steps
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -860,9 +964,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Adding New Downloaders
+  
+
     
   </span>
+  
   
 
       </a>
@@ -883,9 +992,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Subscriptions
+  
+
     
   </span>
+  
   
 
       </a>
@@ -906,9 +1020,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Filtering Duplicates
+  
+
     
   </span>
+  
   
 
       </a>
@@ -965,9 +1084,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Advanced
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -976,7 +1100,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Advanced
+            
+  
+    Advanced
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -992,9 +1120,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tag Siblings
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1015,9 +1148,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tag Parents
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1038,9 +1176,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sidecars
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1061,9 +1204,14 @@
   
   
   <span class="md-ellipsis">
-    Multiple Local File Services
+    
+  
+    Multiple Local File Domains
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1084,9 +1232,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Filtering Duplicates Automatically
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1107,9 +1260,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     General Clever Tricks
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1130,9 +1288,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Reducing Lag
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1153,9 +1316,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Database Migration
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="database_merging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Merging
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1176,9 +1372,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Custom Assets
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1199,9 +1400,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Launch Arguments
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1222,9 +1428,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     IPFS
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1245,9 +1456,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Running Your Own Server
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1281,74 +1497,37 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Alternate Installations
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_13">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_14">
             <span class="md-nav__icon md-icon"></span>
-            Alternate Installations
+            
+  
+    Alternate Installations
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="docker.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Docker
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="wine.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Running In Wine
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1371,9 +1550,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Running From Source
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1384,9 +1568,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Running From Source
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1409,7 +1598,9 @@
         <li class="md-nav__item">
   <a href="#simple_setup_guide" class="md-nav__link">
     <span class="md-ellipsis">
-      Simple Setup Guide
+      
+        Simple Setup Guide
+      
     </span>
   </a>
   
@@ -1419,7 +1610,9 @@
           <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary:
+      
+        Summary:
+      
     </span>
   </a>
   
@@ -1428,7 +1621,9 @@
           <li class="md-nav__item">
   <a href="#walkthrough" class="md-nav__link">
     <span class="md-ellipsis">
-      Walkthrough
+      
+        Walkthrough
+      
     </span>
   </a>
   
@@ -1438,7 +1633,9 @@
           <li class="md-nav__item">
   <a href="#core" class="md-nav__link">
     <span class="md-ellipsis">
-      Core
+      
+        Core
+      
     </span>
   </a>
   
@@ -1447,7 +1644,9 @@
           <li class="md-nav__item">
   <a href="#built_programs" class="md-nav__link">
     <span class="md-ellipsis">
-      Built Programs
+      
+        Built Programs
+      
     </span>
   </a>
   
@@ -1456,7 +1655,9 @@
           <li class="md-nav__item">
   <a href="#environment_setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Environment setup
+      
+        Environment setup
+      
     </span>
   </a>
   
@@ -1465,7 +1666,9 @@
           <li class="md-nav__item">
   <a href="#running_it_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Running it
+      
+        Running it
+      
     </span>
   </a>
   
@@ -1479,7 +1682,9 @@
           <li class="md-nav__item">
   <a href="#have_fun" class="md-nav__link">
     <span class="md-ellipsis">
-      Have Fun
+      
+        Have Fun
+      
     </span>
   </a>
   
@@ -1488,7 +1693,9 @@
           <li class="md-nav__item">
   <a href="#simple_updating_guide" class="md-nav__link">
     <span class="md-ellipsis">
-      Simple Updating Guide
+      
+        Simple Updating Guide
+      
     </span>
   </a>
   
@@ -1497,7 +1704,9 @@
           <li class="md-nav__item">
   <a href="#migrating_from_an_existing_install" class="md-nav__link">
     <span class="md-ellipsis">
-      Migrating from an Existing Install
+      
+        Migrating from an Existing Install
+      
     </span>
   </a>
   
@@ -1506,7 +1715,9 @@
           <li class="md-nav__item">
   <a href="#moving_your_install_directory" class="md-nav__link">
     <span class="md-ellipsis">
-      Moving Your Install Directory
+      
+        Moving Your Install Directory
+      
     </span>
   </a>
   
@@ -1520,7 +1731,9 @@
         <li class="md-nav__item">
   <a href="#what_you_need" class="md-nav__link">
     <span class="md-ellipsis">
-      Doing it Yourself
+      
+        Doing it Yourself
+      
     </span>
   </a>
   
@@ -1530,7 +1743,9 @@
           <li class="md-nav__item">
   <a href="#qt" class="md-nav__link">
     <span class="md-ellipsis">
-      Qt
+      
+        Qt
+      
     </span>
   </a>
   
@@ -1539,7 +1754,9 @@
           <li class="md-nav__item">
   <a href="#mpv" class="md-nav__link">
     <span class="md-ellipsis">
-      mpv
+      
+        mpv
+      
     </span>
   </a>
   
@@ -1548,7 +1765,9 @@
           <li class="md-nav__item">
   <a href="#sqlite" class="md-nav__link">
     <span class="md-ellipsis">
-      SQLite
+      
+        SQLite
+      
     </span>
   </a>
   
@@ -1557,7 +1776,9 @@
           <li class="md-nav__item">
   <a href="#ffmpeg" class="md-nav__link">
     <span class="md-ellipsis">
-      FFMPEG
+      
+        FFMPEG
+      
     </span>
   </a>
   
@@ -1566,7 +1787,9 @@
           <li class="md-nav__item">
   <a href="#running_it" class="md-nav__link">
     <span class="md-ellipsis">
-      Running It
+      
+        Running It
+      
     </span>
   </a>
   
@@ -1575,25 +1798,9 @@
           <li class="md-nav__item">
   <a href="#building_these_docs" class="md-nav__link">
     <span class="md-ellipsis">
-      Building these Docs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#windows_build" class="md-nav__link">
-    <span class="md-ellipsis">
-      Building Packages on Windows
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#additional_windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Windows Info
+      
+        Building these Docs
+      
     </span>
   </a>
   
@@ -1607,7 +1814,9 @@
         <li class="md-nav__item">
   <a href="#my_code" class="md-nav__link">
     <span class="md-ellipsis">
-      My Code
+      
+        My Code
+      
     </span>
   </a>
   
@@ -1617,6 +1826,62 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="docker.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="wine.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running In Wine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1653,26 +1918,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" >
         
           
-          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Downloader Creation
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_14">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15">
             <span class="md-nav__icon md-icon"></span>
-            Downloader Creation
+            
+  
+    Downloader Creation
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1688,32 +1962,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="downloader_gugs.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Gallery URL Generators
-    
-  </span>
   
 
       </a>
@@ -1734,9 +1990,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     URL Classes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1765,26 +2026,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_14_4" id="__nav_3_14_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_15_3" id="__nav_3_15_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Parsers
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_14_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_14_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_15_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15_3">
             <span class="md-nav__icon md-icon"></span>
-            Parsers
+            
+  
+    Parsers
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1800,9 +2070,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1831,26 +2106,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_14_4_2" id="__nav_3_14_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_15_3_2" id="__nav_3_15_3_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Components
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_14_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_14_4_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_15_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15_3_2">
             <span class="md-nav__icon md-icon"></span>
-            Components
+            
+  
+    Components
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1866,9 +2150,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Formulae
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1889,9 +2178,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Content Parsers
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1912,9 +2206,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Page Parsers
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1951,26 +2250,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_14_4_3" id="__nav_3_14_4_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_15_3_3" id="__nav_3_15_3_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Walkthroughs
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_14_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_14_4_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_15_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15_3_3">
             <span class="md-nav__icon md-icon"></span>
-            Walkthroughs
+            
+  
+    Walkthroughs
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1986,9 +2294,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Gallery Page Example
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2009,9 +2322,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     File Page Example
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2032,9 +2350,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API Example
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2066,14 +2389,47 @@
   
   
     <li class="md-nav__item">
+      <a href="downloader_gugs.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gallery URL Generators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="downloader_completion.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
+    
+  
     Putting It All Together
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2094,9 +2450,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sharing
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2117,9 +2478,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Login Manager
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2171,9 +2537,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2182,7 +2553,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            API
+            
+  
+    API
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2198,9 +2573,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Client API
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2221,9 +2601,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API documentation
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2267,9 +2652,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Misc
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2278,7 +2668,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Misc
+            
+  
+    Misc
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2294,9 +2688,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2317,9 +2716,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Privacy
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2340,9 +2744,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Contact and Links
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2363,9 +2772,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Financial Support
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2386,9 +2800,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Changelog
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2409,9 +2828,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     About These Docs
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2456,7 +2880,9 @@
         <li class="md-nav__item">
   <a href="#simple_setup_guide" class="md-nav__link">
     <span class="md-ellipsis">
-      Simple Setup Guide
+      
+        Simple Setup Guide
+      
     </span>
   </a>
   
@@ -2466,7 +2892,9 @@
           <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary:
+      
+        Summary:
+      
     </span>
   </a>
   
@@ -2475,7 +2903,9 @@
           <li class="md-nav__item">
   <a href="#walkthrough" class="md-nav__link">
     <span class="md-ellipsis">
-      Walkthrough
+      
+        Walkthrough
+      
     </span>
   </a>
   
@@ -2485,7 +2915,9 @@
           <li class="md-nav__item">
   <a href="#core" class="md-nav__link">
     <span class="md-ellipsis">
-      Core
+      
+        Core
+      
     </span>
   </a>
   
@@ -2494,7 +2926,9 @@
           <li class="md-nav__item">
   <a href="#built_programs" class="md-nav__link">
     <span class="md-ellipsis">
-      Built Programs
+      
+        Built Programs
+      
     </span>
   </a>
   
@@ -2503,7 +2937,9 @@
           <li class="md-nav__item">
   <a href="#environment_setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Environment setup
+      
+        Environment setup
+      
     </span>
   </a>
   
@@ -2512,7 +2948,9 @@
           <li class="md-nav__item">
   <a href="#running_it_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Running it
+      
+        Running it
+      
     </span>
   </a>
   
@@ -2526,7 +2964,9 @@
           <li class="md-nav__item">
   <a href="#have_fun" class="md-nav__link">
     <span class="md-ellipsis">
-      Have Fun
+      
+        Have Fun
+      
     </span>
   </a>
   
@@ -2535,7 +2975,9 @@
           <li class="md-nav__item">
   <a href="#simple_updating_guide" class="md-nav__link">
     <span class="md-ellipsis">
-      Simple Updating Guide
+      
+        Simple Updating Guide
+      
     </span>
   </a>
   
@@ -2544,7 +2986,9 @@
           <li class="md-nav__item">
   <a href="#migrating_from_an_existing_install" class="md-nav__link">
     <span class="md-ellipsis">
-      Migrating from an Existing Install
+      
+        Migrating from an Existing Install
+      
     </span>
   </a>
   
@@ -2553,7 +2997,9 @@
           <li class="md-nav__item">
   <a href="#moving_your_install_directory" class="md-nav__link">
     <span class="md-ellipsis">
-      Moving Your Install Directory
+      
+        Moving Your Install Directory
+      
     </span>
   </a>
   
@@ -2567,7 +3013,9 @@
         <li class="md-nav__item">
   <a href="#what_you_need" class="md-nav__link">
     <span class="md-ellipsis">
-      Doing it Yourself
+      
+        Doing it Yourself
+      
     </span>
   </a>
   
@@ -2577,7 +3025,9 @@
           <li class="md-nav__item">
   <a href="#qt" class="md-nav__link">
     <span class="md-ellipsis">
-      Qt
+      
+        Qt
+      
     </span>
   </a>
   
@@ -2586,7 +3036,9 @@
           <li class="md-nav__item">
   <a href="#mpv" class="md-nav__link">
     <span class="md-ellipsis">
-      mpv
+      
+        mpv
+      
     </span>
   </a>
   
@@ -2595,7 +3047,9 @@
           <li class="md-nav__item">
   <a href="#sqlite" class="md-nav__link">
     <span class="md-ellipsis">
-      SQLite
+      
+        SQLite
+      
     </span>
   </a>
   
@@ -2604,7 +3058,9 @@
           <li class="md-nav__item">
   <a href="#ffmpeg" class="md-nav__link">
     <span class="md-ellipsis">
-      FFMPEG
+      
+        FFMPEG
+      
     </span>
   </a>
   
@@ -2613,7 +3069,9 @@
           <li class="md-nav__item">
   <a href="#running_it" class="md-nav__link">
     <span class="md-ellipsis">
-      Running It
+      
+        Running It
+      
     </span>
   </a>
   
@@ -2622,25 +3080,9 @@
           <li class="md-nav__item">
   <a href="#building_these_docs" class="md-nav__link">
     <span class="md-ellipsis">
-      Building these Docs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#windows_build" class="md-nav__link">
-    <span class="md-ellipsis">
-      Building Packages on Windows
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#additional_windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Windows Info
+      
+        Building these Docs
+      
     </span>
   </a>
   
@@ -2654,7 +3096,9 @@
         <li class="md-nav__item">
   <a href="#my_code" class="md-nav__link">
     <span class="md-ellipsis">
-      My Code
+      
+        My Code
+      
     </span>
   </a>
   
@@ -2670,6 +3114,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2685,9 +3130,10 @@
 
 
 <h1 id="running_from_source">running from source<a class="headerlink" href="#running_from_source" title="Permanent link">&para;</a></h1>
-<p>I write the client and server entirely in <a href="https://python.org">python</a>, which can run straight from source. It is getting simpler and simpler to run python programs like this, so don't be afraid of it. If none of the built packages work for you (for instance if you use Windows 8.1 or 18.04 Ubuntu (or equivalent)), it may be the only way you can get the program to run. Also, if you have a general interest in exploring the code or wish to otherwise modify the program, you will obviously need to do this.</p>
+<p>I write the client and server entirely in <a href="https://python.org">python</a>, which can run straight from source. It is getting simpler and simpler to run python programs like this, so don't be afraid of it. The program generally works better (better UI compatibility and mpv support) from source than from a built release. If none of the builds work for you (for instance if you use Windows 8.1 or 18.04 Ubuntu or a newer but more distant flavour of Linux, and since 2025-09 any macOS situation), it may be the only way you can get the program to run. Also, if you want to explore or modify the code, you will obviously need to do this.</p>
+<p>I generally recommend running from source if you can, especially on Linux.</p>
 <h2 id="simple_setup_guide">Simple Setup Guide<a class="headerlink" href="#simple_setup_guide" title="Permanent link">&para;</a></h2>
-<p>There are now setup scripts that make this easy on Windows and Linux. You do not need any python experience.</p>
+<p>There are now setup scripts that make this easy. You do not need any python experience.</p>
 <h3 id="summary">Summary:<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Get Python.</li>
@@ -2725,28 +3171,33 @@
 </ul>
 </li>
 </ul>
-<p>Git should now be installed on your system. Any new terminal/command line/powershell window (shift+right-click on any folder and hit something like 'Open in terminal') now has the <code>git</code> command!</p>
+<p>Git should now be installed on your system. Any <em>new</em> terminal/command line/powershell window (right-click on any folder and hit something like 'Open in terminal') now has the <code>git</code> command!</p>
 </details>
 <details class="warning">
 <summary>Windows 7</summary>
 <p>For a long time, I supported Windows 7 via running from source. Unfortunately, as libraries and code inevitably updated, this finally seems to no longer be feasible. Python 3.8 will no longer run the program. I understand v582 is one of the last versions of the program to work.</p>
 <p>First, you will have to install the older <a href="https://www.python.org/downloads/release/python-3810/">Python 3.8</a>, since that is the latest version that you can run.</p>
 <p>Then, later, when you do the <code>git clone https://github.com/hydrusnetwork/hydrus</code> line, you will need to run <code>git checkout tags/v578</code>, which will rewind you to that point in time.</p>
-<p>I can't promise anything though. The requirements.txt isn't perfect, and something else may break in future! You may like to think about setting up a Linux instance.</p>
+<p>I can't promise anything though. You may like to think about moving to Linux.</p>
 </details>
-<p>Then you will need to install Python. Get 3.11 or 3.12 <a href="https://www.python.org/downloads/windows/">here</a>. During the install process, make sure it has something like 'Add Python to PATH' checked. This makes Python available everywhere in Windows.  </p>
-<p>If you want to test it, then, <em>after installation is complete</em>, right-click on any folder and select 'open in terminal' and copy/paste the following:</p>
+<p>If you do not know if you have Python, you probably do not. Let's check--right-click on any folder and select 'open in terminal' and copy/paste the following:</p>
+<p><code>python --version</code></p>
+<p>If you get some nice python version information, you have python. Hydrus should be fine with Python 3.10-3.13. If you are on 3.14+, that may be ok, but select the 'advanced' setup later on and choose the '(t)est' options. If you are stuck on something older, try the same thing, but with the '(o)lder' options (but I can't promise it will work!).</p>
+<p>If you don't have python, we need to get it. Try 3.12 <a href="https://www.python.org/downloads/windows/">here</a>. During the install process, make sure it has something like 'Add Python to PATH' checked. This makes Python available everywhere in Windows.  </p>
+<p>Once it is installed, then, <em>after installation is totally complete</em>, open up a new terminal (It needs to be a new terminal to catch your now-updated PATH) and copy/paste the following:</p>
 <p><code>python --version</code><br />
 <code>python -m pip --version</code><br />
 <code>python -m venv --help</code></p>
-<p>If all these lines produce good output (no errors), you are good to go!</p>
+<p>If all these produce good output (no errors), you are good to go!</p>
 </div>
 <div class="tabbed-block">
 <p>You probably have git, but let's check by opening a new terminal and going:</p>
 <p><code>git --version</code></p>
-<p>If you do not get a nice version back, you will want to install it, most likely with:</p>
-<p><code>apt install git</code></p>
-<p>You should already have a fairly new python. Ideally, you want at least 3.10. You can find out what version you have just by opening a new terminal and typing <code>python3</code> or <code>python</code>.</p>
+<p>If you do not get a nice answer, you will want to install it. If you are on Debian/Ubuntu/Mint, you'll most likely be using <code>apt</code>, like this:</p>
+<p><code>sudo apt install git</code></p>
+<p>If you are in the Arch family, you may be on <code>pacman</code>. In this case, where I might say in this help to do <code>sudo apt install package</code>, you are probably looking at <code>sudo pacman -S package</code>, so:</p>
+<p><code>sudo pacman -S git</code></p>
+<p>You should already have a fairly new python. Hydrus is fine with Python 3.10-3.13. If you are on 3.14+, that may be ok, but select the 'advanced' setup later on and choose the '(t)est' options. If you are stuck on something older, try the same thing, but with the '(o)lder' options (but I can't promise it will work!). You can find out what version you have just by opening a new terminal and typing <code>python3</code> or <code>python</code>.</p>
 <p>You are going to need <code>pip</code> and <code>venv</code>. These are often bundled with a python install, but not always with a system python. Open a terminal and try these two lines:</p>
 <p><code>python3 -m pip --version</code><br />
 <code>python3 -m venv --help</code></p>
@@ -2755,11 +3206,12 @@
 <code>sudo apt install python3-venv</code></p>
 </div>
 <div class="tabbed-block">
+<p><em>If you are currently on the old App and need to migrate to a source install, get a test situation running and then scroll down to the <a href="#migrating_from_an_existing_install">migrating from an existing install</a> section.</em></p>
 <p>You may not have git already, so open a new terminal and check with:</p>
 <p><code>git --version</code></p>
 <p>If you do not get a nice version back, you will want to install it, most likely with:</p>
 <p><code>brew install git</code></p>
-<p>You should already have a fairly new python. Ideally, you want at least 3.10. You can find out what version you have just by opening a new terminal and typing <code>python3</code> or <code>python</code>.</p>
+<p>You should already have a fairly new python. Hydrus should be fine with Python 3.10-3.13. If you are on 3.14+, that may be ok, but select the 'advanced' setup later on and choose the '(t)est' options. If you are stuck on something older, try the same thing, but with the '(o)lder' options (but I can't promise it will work!). You can find out what version you have just by opening a new terminal and typing <code>python3</code> or <code>python</code>.</p>
 <p>You are going to need <code>pip</code> and <code>venv</code>. These are often bundled with a python install, but not always with a system python. Open a terminal and try these two lines:</p>
 <p><code>python3 -m pip --version</code><br />
 <code>python3 -m venv --help</code></p>
@@ -2767,12 +3219,11 @@
 </div>
 </div>
 </div>
-<p>Hydrus should be fine with Python 3.10-3.13. If you are on an even newer python, that may be ok, but select the 'advanced' setup later on and choose the '(t)est' options. If you are stuck on something older, try the same thing, but with the '(o)lder' options (but I can't promise it will work!).</p>
 <p><strong>Then, get the hydrus source.</strong> It is best to get it with Git: make a new folder somewhere, open a terminal in it, and then paste:</p>
 <div class="highlight"><pre><span></span><code>git clone https://github.com/hydrusnetwork/hydrus
 </code></pre></div>
 <p>The whole repository will be copied to that location--this is now your install dir. You can move it if you like.</p>
-<p>If Git is not available, then just go to the <a href="https://github.com/hydrusnetwork/hydrus/releases/latest">latest release</a> and download and extract the source code .zip somewhere.</p>
+<p>If Git is definitely not available, then go to the <a href="https://github.com/hydrusnetwork/hydrus/releases/latest">latest release</a> and download and extract the source code .zip somewhere.</p>
 <div class="admonition warning">
 <p class="admonition-title">Read-only install locations</p>
 <p>Make sure the install directory has convenient write permissions (e.g. on Windows, don't put it in "Program Files"). Extracting straight to a spare drive, something like "D:\Hydrus Network", is ideal.</p>
@@ -2780,8 +3231,8 @@
 <p>We will call the base extract directory, the one with 'hydrus_client.py' in it, <code>install_dir</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Mixed Builds</p>
-<p>Don't mix and match build extracts and source extracts. The process that runs the code gets confused if there are unexpected extra .dlls in the directory. <strong>If you need to convert between built and source releases, perform a <a href="getting_started_installing.html#clean_installs">clean install</a>.</strong>  </p>
-<p>If you are converting from one install type to another, make a backup before you start. Then, if it all goes wrong, you'll always have a safe backup to rollback to.</p>
+<p>Don't mix and match build extracts and source extracts. The process that runs the code gets confused if there are unexpected extra .dlls in the directory. You will want to set up an entirely new install situation and then move your database dir from the old to the new. <a href="#migrating_from_an_existing_install">More here</a>.  </p>
+<p><strong>If you are converting from one install type to another, make a backup before you start.</strong> Then, if it all goes wrong, you'll always have a safe backup to rollback to.</p>
 </div>
 <h4 id="built_programs">Built Programs<a class="headerlink" href="#built_programs" title="Permanent link">&para;</a></h4>
 <p>There are three special external libraries. You just have to get them and put them in the correct place:</p>
@@ -2817,7 +3268,7 @@
 <li>
 <p>mpv  </p>
 <p>Linux can provide what we need in a couple of different ways. It is important that we get <code>libmpv</code>, rather than just the <code>mpv</code> player. Some Linux installs of mpv do also bring libmpv, but others do not. If your package manager provides mpv and it says it comes with libmpv, you are probably good just to get that.</p>
-<p>Otherwise, try just running <code>apt install libmpv1</code> or <code>apt install libmpv2</code> in a new terminal. You can also try <code>apt show libmpv2</code> to see any current version. Or, if you use a different package manager, try searching <code>libmpv</code>, <code>libmpv1</code>, <code>libmpv2</code>, or again, just <code>mpv</code> on that.</p>
+<p>Otherwise, try just running <code>sudo apt install libmpv1</code> or <code>sudo apt install libmpv2</code> in a new terminal. You can also try <code>apt show libmpv2</code> to see any current version. Or, if you use a different package manager, try searching <code>libmpv</code>, <code>libmpv1</code>, <code>libmpv2</code>, or again, just <code>mpv</code> on that.</p>
 <ol>
 <li>If you have earlier than 0.34.1, you will be looking at running the 'advanced' setup in the next section and selecting the 'old' mpv.</li>
 <li>If you have 0.34.1 or later, you can run the normal setup script.</li>
@@ -2829,7 +3280,7 @@
 </li>
 <li>
 <p>FFMPEG  </p>
-<p>You should already have ffmpeg, but double-check: just type <code>ffmpeg</code> into a new terminal, and it should give a basic version response. If you don't have it, check your package manager.</p>
+<p>You should already have ffmpeg, but we should double-check: just type <code>ffmpeg</code> into a new terminal, and it should give a basic version response. If you don't have it, check your package manager.</p>
 </li>
 </ol>
 </div>
@@ -2837,7 +3288,7 @@
 <ol>
 <li>
 <p>mpv  </p>
-<p>Unfortunately, mpv is not well supported in macOS yet. You may be able to install it in brew, but it seems to freeze the client as soon as it is loaded. Hydev is thinking about fixes here.</p>
+<p>Unfortunately, mpv is not well supported in macOS yet. You may be able to install <code>libmpv</code> in brew, but it seems to freeze the client as soon as it is loaded. If <code>help-&gt;about</code> seems to suggest mpv loaded ok, I still recommend you set your <code>options-&gt;media playback</code> settings to 'show with native viewer' and not mpv. There may be macOS mpv support in future.</p>
 </li>
 <li>
 <p>SQLite3  </p>
@@ -2845,47 +3296,83 @@
 </li>
 <li>
 <p>FFMPEG  </p>
-<p>You should already have ffmpeg.</p>
+<p>You should already have ffmpeg, but we should double-check: just type <code>ffmpeg</code> into a new terminal, and it should give a basic version response. If you don't have it, you are probably looking at:</p>
+<p><code>brew install ffmpeg</code></p>
 </li>
 </ol>
 </div>
 </div>
 </div>
 <h4 id="environment_setup">Environment setup<a class="headerlink" href="#environment_setup" title="Permanent link">&para;</a></h4>
+<p>Different systems sometimes call python different names. If I tell you to run <code>python blah</code> here and you get an error about it being missing, try <code>python3 blah</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Windows</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Double-click <code>setup_venv.bat</code>.</p>
+<p>Double-click <code>setup_venv.py</code>. You can also run <code>python setup_venv.py</code> from the command line.</p>
 </div>
 <div class="tabbed-block">
-<p><em>You do not need to run this as sudo, and doing so may cause some things not to work. Just regular you in a normal terminal.</em></p>
-<p>The file is <code>setup_venv.sh</code>. You may be able to double-click it. If not, open a terminal in the folder and type:  </p>
-<p><code>./setup_venv.sh</code></p>
+<p><em>You do not need to run the setup script as sudo, and doing so may cause some things not to work. Just regular you in a normal terminal.</em></p>
+<p>The file is <code>setup_venv.py</code>. You may be able to double-click it. If not, open a terminal in the folder and type:  </p>
+<p><code>./setup_venv.py</code></p>
+<p>-or, explicitly-</p>
+<p><code>python setup_venv.py</code></p>
 <p>If you do not have permission to execute the file, do this before trying again:  </p>
-<p><code>chmod +x setup_venv.sh</code></p>
-<p>You will likely have to do the same on the other .sh files.</p>
-<p>If you like, you can run the <code>setup_desktop.sh</code> file to install an io.github.hydrusnetwork.hydrus.desktop file to your applications folder. (Or check the template in <code>install_dir/static/io.github.hydrusnetwork.hydrus.desktop</code> and do it yourself!)</p>
+<p><code>chmod +x setup_venv.py</code></p>
+<p>You will likely have to do the same on the other .sh or .py files.</p>
+<div class="admonition info">
+<p class="admonition-title">Desktop File</p>
+<p>If you like, you can later run the <code>setup_desktop.sh</code> file to install an io.github.hydrusnetwork.hydrus.desktop file to your applications folder. (Or check the template in <code>install_dir/static/io.github.hydrusnetwork.hydrus.desktop</code> and do it yourself!)</p>
+</div>
 </div>
 <div class="tabbed-block">
-<p><em>You do not need to run this as sudo, and doing so may cause some things not to work. Just regular you in a normal terminal.</em></p>
-<p>Double-click <code>setup_venv.command</code>.</p>
-<p>If you do not have permission to run the .command file, then open a terminal on the folder and enter:</p>
-<p><code>chmod +x setup_venv.command</code></p>
+<p><em>You do not need to run the setup script as sudo, and doing so may cause some things not to work. Just regular you.</em></p>
+<p>The file is <code>setup_venv.py</code>. You may be able to double-click it. If not, open a terminal in the folder and type:  </p>
+<p><code>./setup_venv.py</code></p>
+<p>-or, explicitly-</p>
+<p><code>python setup_venv.py</code></p>
+<p>If you do not have permission to run the .command file, open a terminal on the folder and enter:</p>
+<p>If you do not have permission to execute the file, do this before trying again:  </p>
+<p><code>chmod +x setup_venv.py</code></p>
+<p>We used to do this via a .command file. If you want to run one of the other .command files, you likely also need this to tell Gatekeeper you are ok running it:</p>
+<p><code>sudo xattr -rd com.apple.quarantine the_script.command</code></p>
 <p>You will likely have to do the same on the other .command files.</p>
-<p>You may need to experiment with the advanced choices, especially if your macOS is a litle old.</p>
 </div>
 </div>
 </div>
-<p>The setup will ask you some questions. Just type the letters it asks for and hit enter. Most users are looking at the (s)imple setup, but if your situation is unusual, try the (a)dvanced, which will walk you through the main decisions. Once ready, it should take a minute to download its packages and a couple minutes to install them. Do not close it until it is finished installing everything and says 'Done!'. If it seems like it hung, just give it time to finish.</p>
-<p>If something messes up, or you want to make a different decision, just run the setup script again and it will reinstall everything. Everything these scripts do ends up in the 'venv' directory, so you can also just delete that folder to 'uninstall' the venv. It should <em>just work</em> on most normal computers, but let me know if you have any trouble.</p>
-<p>Then run the 'setup_help' script to build the help. This isn't necessary, but it is nice to have it built locally. You can run this again at any time to rebuild the current help.</p>
+<p>The setup will ask you some questions. Just type the letters it asks for and hit enter. Most users are looking at the (s)imple setup, but if your situation is unusual (e.g. very old/new python), try the (a)dvanced, which will walk you through the main decisions. Once ready, it should take a minute to download its packages and a couple minutes to install them. Do not close it until it is finished installing everything and says 'Done!'. If it seems like it hung, just give it time to finish.</p>
+<p>This setup creates a copy of your system python in a folder called 'venv'. Is it completely non-destructive and undoable. If something messes up, or you want to make a different decision, just run the setup script again and it will clear out and reinstall everything. You can also just delete that folder to 'uninstall' the venv.</p>
+<p>The setup should <em>just work</em> on most normal computers, but very old or new systems or unusual architectures may run into trouble. Let me know if you have any problems.</p>
+<p>Then run the 'setup_help' script to build the help. This isn't necessary, but it is nice to have it built locally. You can run this again at any time to update to the current help.</p>
+<details class="note">
+<summary>Custom python</summary>
+<p>If you want to set up a venv using a different python than your system, just run <code>setup_venv.py</code> with that python, like this:</p>
+<p><code>/path/to/my/python setup_venv.py</code></p>
+<p>You can also select a custom venv destination:</p>
+<p><code>/path/to/my/314/python setup_venv.py -v=venv314</code></p>
+<p>If you are developing with hydrus, you can set up multiple venvs to test out different versions of python or, say, PySide vs PyQt.</p>
+</details>
 <h4 id="running_it_1">Running it<a class="headerlink" href="#running_it_1" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Run the launch script, not the .py</p>
+<p>Do not run <code>hydrus_client.py</code> on its own by, say, double-clicking it, or it will fail with errors about missing libraries (probably <code>yaml</code>/<code>qtpy</code>).</p>
+<p>We have just set up all the hydrus stuff in a "venv", which is not the same as your system python. In order to run <code>hydrus_client.py</code>, we need to run it with that venv instead, which we can do with a shortcut or script.</p>
+</div>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Windows</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Run 'hydrus_client.bat' to start the client.</p>
+<p>Run <code>hydrus_client.bat</code> to start the client.</p>
+<p>Alternately, if you want a very simple shortcut, you can call the venv directly, using the python executable we just installed. The setup venv script may have given you an example. It will look something like this:</p>
+<p><code>C:\Hydrus\venv\Scripts\pythonw.exe C:\Hydrus\hydrus_client.py</code></p>
 </div>
 <div class="tabbed-block">
+<div class="admonition warning">
+<p class="admonition-title">Wayland (and MPV)</p>
+<p>Unfortunately, hydrus has several bad bugs in Wayland. The mpv window will often not embed properly into the media viewer, menus and windows may position on the wrong screen, and the taskbar icon may not work at all. Newer versions are less buggy, but some of these issues, particularly mpv embedding, seem to be intractable.</p>
+<p>If mpv is the only problem, then switch to the QtMediaPlayer under <code>options-&gt;media playback</code>.</p>
+<p>If you really want mpv or have other UI issues, user testing suggests that the best solution for now is just to launch the program in X11. Launch the program <em>without</em> the WAYLAND_DISPLAY variable and <em>with</em> <code>QT_QPA_PLATFORM=xcb</code>, which you can achieve with <code>unset WAYLAND_DISPLAY</code> and <code>export QT_QPA_PLATFORM=xcb</code> in a boot script that launches <code>hydrus_client</code>. You might need to do <code>sudo apt install xwayland</code> first.</p>
+<p>You should be able to see which window manager hydrus thinks it is running under in <code>help-&gt;about</code>, on the "Qt" row.</p>
+<p>I expect to revisit this question in future versions of Qt and Wayland, and I plan to try a different mpv embedding technique that I know Wayland should support--we'll see if the situation stabilises.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Qt compatibility</p>
 <p>If the program fails to run, and from terminal it says something like this:</p>
@@ -2901,12 +3388,17 @@
 <li><code>sudo apt install libxcb-cursor-dev</code></li>
 </ul>
 <p>Or check your OS's package manager.</p>
-<p>If you still have trouble with the default Qt6 version, try running setup_venv again and choose a different version. There are several to choose from, including (w)riting a custom version. Check the advanced requirements.txts files in <code>install_dir/static/requirements/advanced</code> for more info, and you can also work off this list: <a href="https://pypi.org/project/PySide6/#history">PySide6</a></p>
+<p>One user reports that Fedora might need <code>libxkbcommon</code> too.</p>
+<p>If you still have trouble with the default Qt6 version, try running setup_venv again and choose a different version. There are several to choose from, including (w)riting a custom version. If you are having a lot of trouble, this list can be worth exploring: <a href="https://pypi.org/project/PySide6/#history">PySide6</a></p>
 </div>
-<p>Run 'hydrus_client.sh' to start the client. Don't forget to set <code>chmod +x hydrus_client.sh</code> if you need it.</p>
+<p>Run <code>hydrus_client.sh</code> to start the client. Don't forget to <code>chmod +x hydrus_client.sh</code> if you need it.</p>
+<p>Alternately, if you want a very simple shortcut, you can call the venv directly, using the python executable we just installed. The setup venv script may have given you an example. It will look something like this:</p>
+<p><code>/path/to/your/Hydrus/venv/bin/python /path/to/your/Hydrus/hydrus_client.py</code></p>
 </div>
 <div class="tabbed-block">
-<p>Run 'hydrus_client.command' to start the client. Don't forget to set <code>chmod +x hydrus_client.command</code> if you need it.</p>
+<p>Run <code>hydrus_client.command</code> to start the client. Don't forget to <code>chmod +x hydrus_client.command</code> and <code>sudo xattr -rd com.apple.quarantine hydrus_client.command</code> if you need it.</p>
+<p>Alternately, if you want a very simple shortcut, you can call the venv directly, using the python executable we just installed. The setup venv script may have given you an example. It will look something like this:</p>
+<p><code>/path/to/your/Hydrus/venv/bin/python /path/to/your/Hydrus/hydrus_client.py</code></p>
 </div>
 </div>
 </div>
@@ -2914,7 +3406,7 @@
 <div class="admonition warning">
 <p class="admonition-title">Missing a Library</p>
 <p>If the client fails to boot, it should place a 'hydrus_crash.log' in your 'db' directory or your desktop, or, if it got far enough, it may write the error straight to the 'client - date.log' file in your db directory.  </p>
-<p>If that error talks about a missing library, particularly 'yaml', try reinstalling your venv. Scroll through the output--are you sure it installed everything correctly? Do you need to run the advanced setup and select a different version of Qt?</p>
+<p>If that error talks about a missing library, particularly <code>yaml</code>, try reinstalling your venv. Scroll through the output--are you sure it installed everything correctly? If it is upset about <code>qtpy</code> or <code>PySide</code>, do you need to run the advanced setup and select a different version of Qt?</p>
 </div>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Windows</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">macOS</label></div>
 <div class="tabbed-content">
@@ -2924,6 +3416,8 @@
 <p>However, some versions of Windows won't let you pin a shortcut to a bat to the start menu. In this case, make a shortcut like this:</p>
 <p><code>C:\Windows\System32\cmd.exe /c "C:\hydrus\Hydrus Source\hydrus_client-user.bat"</code></p>
 <p>This is a shortcut to tell the terminal to run the bat; it should be pinnable to start. You can give it a nice name and the hydrus icon and you should be good!</p>
+<p>Or you can make a shortcut with the direct python executable that we saw before, something like:</p>
+<p><code>C:\Hydrus\venv\Scripts\pythonw.exe C:\Hydrus\hydrus_client.py</code></p>
 </div>
 <div class="tabbed-block">
 <p>If you want to redirect your database or use any other launch arguments, then copy 'hydrus_client.sh' to 'hydrus_client-user.sh' and edit it, inserting your desired db path. Run this instead of 'hydrus_client.sh'. New <code>git pull</code> commands will not affect 'hydrus_client-user.sh'.</p>
@@ -2934,7 +3428,8 @@
 </div>
 </div>
 <h3 id="have_fun">Have Fun<a class="headerlink" href="#have_fun" title="Permanent link">&para;</a></h3>
-<p>If everything boots ok, great! Have a play around with the client and make sure file imports work ok and that mpv is all correct.</p>
+<p>If everything boots ok, great! Have a play around with the client and make sure file imports work ok and, if you are not macOS, that mpv is all correct. Hitting <code>help-&gt;about</code> will show if the optional libraries are all available and will give you error popups detailing any problems.</p>
+<p>Don't forget to create a nice shortcut to your <code>hydrus_client</code> or <code>hydrus_client-user</code> launch script. If you can, set a custom icon--there are several <code>hydrus...</code> files in <code>install_dir/static</code> that are suitable.</p>
 <details class="note">
 <summary>System Qt styles</summary>
 <p>If you have a system Qt with several styles but do not see them under <code>options-&gt;style</code>, it is probably that your venv cannot "see" your system Qt.</p>
@@ -2943,28 +3438,39 @@
 </details>
 <h3 id="simple_updating_guide">Simple Updating Guide<a class="headerlink" href="#simple_updating_guide" title="Permanent link">&para;</a></h3>
 <p>Updating is simple. If you installed with <code>git</code>, it takes about three seconds: just close the client, open the base install directory in a terminal, and type <code>git pull</code>. I have added easy 'git_pull' scripts to the install directory for your convenience (on Windows, just double-click 'git_pull.bat'). </p>
-<p>If you installed by extracting the source zip, you can update much like you would with the built extract: download the <a href="https://github.com/hydrusnetwork/hydrus/releases/latest">latest release</a> source zip and extract it over the top of the folder you have, overwriting the existing source files.</p>
+<p>If you installed by extracting the source zip, update just as you would with the built extract: download the <a href="https://github.com/hydrusnetwork/hydrus/releases/latest">latest release</a> source zip and extract it over the top of the folder you have, overwriting the existing source files.</p>
 <p>If you get a library version error when you try to boot, run the venv setup again. It is worth doing this every 3-6 months, just to stay up to date. I mention in the release posts when there are important changes, usually right after a 'future build' test.</p>
 <h3 id="migrating_from_an_existing_install">Migrating from an Existing Install<a class="headerlink" href="#migrating_from_an_existing_install" title="Permanent link">&para;</a></h3>
-<p>Many users start out using one of the official built releases and decide to move to source. There is lots of information <a href="database_migration.html">here</a> about how to migrate the database, but for your purposes, the simple method is this:</p>
+<p>Many users start out using one of the official built releases and decide to move to source. There is a full document <a href="database_migration.html">here</a> about how to migrate a database, but for your purposes, the simple method is:</p>
 <p><strong>If you never moved your database to another place and do not use -d/--db_dir launch parameter</strong></p>
 <ol>
-<li>Follow the above guide to get the source install working in a new folder on a fresh database</li>
+<li>Follow the above guide to get the "running from source" install working in a new folder on a fresh database</li>
 <li><strong>MAKE A BACKUP OF EVERYTHING</strong></li>
-<li>Delete any test database you made from the source install's <code>db</code> directory.</li>
-<li>Move your built release's entire <code>db</code> directory to the now-clear source <code>db</code> directory.</li>
-<li>Run your source release again--it should load your old db no problem!</li>
-<li>Move things around, or update your backup routine to point to the new source install location.</li>
+<li>Delete any test database you made from the "running from source" install's <code>db</code> directory.</li>
+<li>Move your built release's entire <code>db</code> directory to the now-clear "running from source" install's <code>db</code> directory.</li>
+<li>Run your "running from source" install again--it should load your old db no problem!</li>
+<li>Update your backup routine to point to the new "running from source" install location.</li>
 </ol>
 <p><strong>If you moved your database to another location and use the -d/--db_dir launch parameter</strong></p>
 <ol>
-<li>Follow the above guide to get the source install working in a new folder on a fresh database (without -db_dir)</li>
+<li>Follow the above guide to get the "running from source" install working in a new folder on a fresh database (without --db_dir)</li>
 <li><strong>MAKE A BACKUP OF EVERYTHING</strong></li>
-<li>Just to be neat, delete any test database you made from the source install's <code>db</code> directory.</li>
-<li>Run the source install with --db_dir just as you would the built executable--it should load your old db no problem!</li>
+<li>Just to be neat, delete any test database you made from the "running from source" install's <code>db</code> directory.</li>
+<li>Run the "running from source" install with --db_dir just as you would the built executable--it should load your old db no problem!</li>
 </ol>
+<p><strong>If you are currently on the macOS App.</strong></p>
+<p><em>Your App's database should be in <code>~/Library/Hydrus</code> (i.e <code>/Users/[You]/Library/Hydrus</code>. You can also hit up <code>file-&gt;open-&gt;database directory</code> in the client to make sure.).</em></p>
+<ol>
+<li>Follow the above guide to get the "running from source" install working in a new folder on a fresh database.</li>
+<li><strong>MAKE A BACKUP OF EVERYTHING</strong></li>
+<li>Delete any test database you made from the "running from source" install's <code>db</code> directory.</li>
+<li>Move the contents of <code>~/Library/Hydrus</code> to your "running from source" install's <code>db</code> directory.</li>
+<li>Run your "running from source" install again--it should load your old db no problem!</li>
+<li>Update your backup routine to point to the new "running from source" install location.</li>
+</ol>
+<p><em>Note that these jobs are essentially the same as making a <a href="getting_started_installing.html#clean_installs">clean install</a> in a new location.</em></p>
 <h3 id="moving_your_install_directory">Moving Your Install Directory<a class="headerlink" href="#moving_your_install_directory" title="Permanent link">&para;</a></h3>
-<p>The venv directory that holds your private copy of python contains absolute path references to itself. If you move your source install directory somewhere, trying to launch hydrus will give you an error about 'python' being missing.</p>
+<p>The venv directory holds a private copy of python, and it contains absolute path references to itself. If you move your source install directory somewhere, trying to launch hydrus will give you an error about 'python' being missing.</p>
 <p><strong>If you move your install directory, you have to build a new venv.</strong> Just double-click the setup_venv script again, and you'll be back in a couple minutes.</p>
 <p>If you want to run from source via a USB stick you will move between different computers, my setup_venv script will not be enough (a normal venv symlinks to your system python, and you have the absolute path issue); you will either have to rebuild your venv from the local python every time you move the stick or manually set up your own environment with a special embeddable version of python or self-contained environment creator like Conda's <code>constructor</code>.</p>
 <h2 id="what_you_need">Doing it Yourself<a class="headerlink" href="#what_you_need" title="Permanent link">&para;</a></h2>
@@ -2987,20 +3493,25 @@
 <div class="admonition info">
 <p class="admonition-title">venvs</p>
 <p>That <code>source venv/bin/activate</code> line turns on your venv. You should see your terminal prompt note you are now in it. A venv is an isolated environment of python that you can install modules to without worrying about breaking something system-wide. <strong>Ideally, you do not want to install python modules to your system python.</strong>  </p>
+<p>When you run the "activate" script, your environment is updated so that any time you type <code>python</code>, it runs the python copy we made in the venv directory and loads those libraries we have installed to it.</p>
 <p>This activate line will be needed every time you alter your venv or run the <code>hydrus_client.py</code>/<code>hydrus_server.py</code> files. You can easily tuck this into a launch script--check the easy setup files for examples.  </p>
-<p>On Windows Powershell, the command is <code>.\venv\Scripts\activate</code>, but you may find the whole deal is done much easier in cmd than Powershell. When in Powershell, just type <code>cmd</code> to get an old fashioned command line. In cmd, the launch command is just <code>venv\scripts\activate.bat</code>, no leading period.</p>
+<p>If you would prefer not to run the "activate" script, you can just invoke the actual python binary instead. Perhaps this is easier for a shortcut or script you want to set up. In this case, rather than entering <code>python</code> on its own, you are doing calls like this:</p>
+<p><code>/path/to/my/hydrus/venv/bin/python -m pip install .</code></p>
+<p>-or-</p>
+<p><code>C:\Hydrus Network\venv\Scripts\python -m pip install .</code></p>
 </div>
-<p><strong>After you have activated the venv</strong>, you can use pip to install everything you need to it from the requirements.txt in the install_dir:</p>
-<div class="highlight"><pre><span></span><code>python -m pip install -r requirements.txt
+<p><strong>After you have activated the venv</strong>, you can use pip to install everything you need to it from the <code>pyproject.toml</code> in the install_dir:</p>
+<p><em>This is going to be simpler in future!</em></p>
+<div class="highlight"><pre><span></span><code>python -m pip install . --group qt6-normal --group opencv-normal --group mpv-normal --group other-normal
 </code></pre></div>
-<p>If you need different versions of libraries, check the cut-up requirements.txts the 'advanced' easy-setup uses in <code>install_dir/static/requirements/advanced</code>. Check and compare their contents to the main requirements.txt to see what is going on. You'll likely need the newer OpenCV on newer Python, for instance.</p>
+<p>If you need different versions of libraries, check the <code>pyproject.toml</code> file itself. For instance, for the newer OpenCV and Qt, you'd do this:</p>
+<div class="highlight"><pre><span></span><code>python -m pip install . --group qt6-test --group opencv-test --group mpv-normal --group other-normal
+</code></pre></div>
 <h3 id="qt">Qt<a class="headerlink" href="#qt" title="Permanent link">&para;</a></h3>
-<p>Qt is the UI library. You can run PySide6 or PyQt6. I used to support Qt5, but no longer. A wrapper library called <code>qtpy</code> allows this. The default is PySide6, but if it is missing, qtpy will fall back to an available alternative. For PyQt6, you need an extra Chart module, so go:</p>
-<div class="highlight"><pre><span></span><code>python -m pip install qtpy PyQt6-Charts PyQt6
+<p>Qt is the UI library. I used to support Qt5, but no longer. You can run PySide6 or PyQt6--a wrapper library called <code>qtpy</code> allows this. The default is PySide6, but if it is missing, qtpy will fall back to an available alternative. You can choose PyQt6 like this:</p>
+<div class="highlight"><pre><span></span><code>python -m pip install . --group qt6-new-pyqt6 --group opencv-normal --group mpv-normal --group other-normal
 </code></pre></div>
 <p>If you have multiple Qts installed, then select which one you want to use by setting the <code>QT_API</code> environment variable to 'pyside6' or 'pyqt6'. Check <em>help-&gt;about</em> to make sure it loaded the right one.</p>
-<p>If you want to set QT_API in a batch file, do this:</p>
-<p><code>set QT_API=pyqt6</code></p>
 <div class="admonition note">
 <p class="admonition-title">Qt compatibility</p>
 <p>If the program fails to run, and from terminal it says something like this:</p>
@@ -3016,16 +3527,16 @@
 <li><code>sudo apt install libxcb-cursor-dev</code></li>
 </ul>
 <p>Or check your OS's package manager.</p>
-<p>If you still have trouble with the default Qt6 version, try running setup_venv again and choose a different version. There are several to choose from, including (w)riting a custom version. Check the advanced requirements.txts files in <code>install_dir/static/requirements/advanced</code> for more info, and you can also work off this list: <a href="https://pypi.org/project/PySide6/#history">PySide6</a></p>
+<p>If you still have trouble with the default Qt6 version, try running setup_venv again and choose a different version. There are several to choose from, including (w)riting a custom version. If you are having a lot of trouble, this list can be worth exploring: <a href="https://pypi.org/project/PySide6/#history">PySide6</a></p>
 </div>
 <h3 id="mpv">mpv<a class="headerlink" href="#mpv" title="Permanent link">&para;</a></h3>
 <p>MPV is optional and complicated, but it is great, so it is worth the time to figure out!</p>
-<p>As well as the python wrapper, 'python-mpv' (which is in the requirements.txt), you also need the underlying dev library. This is <em>not</em> mpv the program, but <code>libmpv</code>, often called <code>libmpv1</code> or <code>libmpv2</code>.</p>
-<p>For Windows, the dll builds are <a href="https://sourceforge.net/projects/mpv-player-windows/files/libmpv/">here</a>, although getting a stable version can be difficult. Just put it in your hydrus base install directory. Check the links in the easy-setup guide above for good versions. You can also just grab the 'mpv-1.dll'/'mpv-2.dll' I bundle in my extractable Windows release.</p>
+<p>As well as the python wrapper that we installed in the venv, you also need the underlying dev library, which means a .dll or .so file. This is <em>not</em> mpv the program, but <code>libmpv</code>, often called <code>libmpv1</code> or <code>libmpv2</code>.</p>
+<p>For Windows, the dll builds are <a href="https://sourceforge.net/projects/mpv-player-windows/files/libmpv/">here</a>, although selecting a stable version can be difficult on older machines. Just put it in your hydrus base install directory. Check the links in the easy-setup guide above for good versions. You can also just grab the 'mpv-1.dll'/'mpv-2.dll' I bundle in my extractable Windows release.</p>
 <p>If you are on Linux, you can usually get <code>libmpv</code> like so:</p>
-<p><code>apt install libmpv1</code><br />
+<p><code>sudo apt install libmpv1</code><br />
 -or-<br />
-<code>apt install libmpv2</code></p>
+<code>sudo apt install libmpv2</code></p>
 <p>On macOS, you should be able to get it with <code>brew install mpv</code>, but you are likely to find mpv crashes the program when it tries to load. Hydev is working on this, but it will probably need a completely different render API.</p>
 <p>Hit <em>help-&gt;about</em> to see your mpv status. If you don't have it, it will present an error popup box with more info.</p>
 <h3 id="sqlite">SQLite<a class="headerlink" href="#sqlite" title="Permanent link">&para;</a></h3>
@@ -3033,7 +3544,7 @@
 <p>On Windows, get the 64-bit sqlite3.dll <a href="https://www.sqlite.org/download.html">here</a>, and just drop it in your <del>base install directory</del> python install location's DLLs folder, likely something like <code>C:\Program Files\Python311\DLLs</code> or <code>C:\Python311\DLLs</code>. There should be a sqlite3.dll there. Rename it to sqlite3.dll.old and add your newer one in.</p>
 <p>You <em>may</em> be able to update your SQLite on Linux or macOS with:</p>
 <ul>
-<li><code>apt install libsqlite3-dev</code></li>
+<li><code>sudo apt install libsqlite3-dev</code></li>
 <li>(activate your venv)</li>
 <li><code>python -m pip install pysqlite3</code></li>
 </ul>
@@ -3057,30 +3568,11 @@ python hydrus_client.py -d=&quot;/path/to/database&quot;
 </code></pre></div>
 <h3 id="building_these_docs">Building these Docs<a class="headerlink" href="#building_these_docs" title="Permanent link">&para;</a></h3>
 <p>When running from source you may want to <a href="about_docs.html">build the hydrus help docs</a> yourself. You can also check the <code>setup_help</code> scripts in the install directory. </p>
-<h3 id="windows_build">Building Packages on Windows<a class="headerlink" href="#windows_build" title="Permanent link">&para;</a></h3>
-<p><em>This info is old, ignore unless you have trouble.</em></p>
-<p>Almost everything you get through pip is provided as pre-compiled 'wheels' these days, but if you get an error about Visual Studio C++ when you try to pip something, you have two choices:</p>
-<ul>
-<li>Get Visual Studio 14/whatever build tools</li>
-<li>Pick a different library version</li>
-</ul>
-<p>Option B is always simpler. If opencv-headless as the requirements.txt specifies won't compile in your python, then try a newer version--there will probably be one of these new highly compatible wheels and it'll just work in seconds. Check my build scripts and various requirements.txts for ideas on what versions to try for your python etc...</p>
-<p>If you are confident you need Visual Studio tools, then prepare for headaches. Although the tools are free from Microsoft, it can be a pain to get them through the official (and often huge) downloader installer from Microsoft. Expect a 5GB+ install with an eye-watering number of checkboxes that probably needs some stackexchange searches to figure out.</p>
-<p>On Windows 10, <a href="https://chocolatey.org/">Chocolatey</a> has been the easy answer. These can be useful:</p>
-<div class="highlight"><pre><span></span><code>choco install -y vcredist-all
-choco install -y vcbuildtools (this is Visual Studio 2015)
-choco install -y visualstudio2017buildtools
-choco install -y visualstudio2022buildtools
-choco install -y windows-sdk-10.0
-</code></pre></div>
-<p><em>Update:</em> On Windows 11, I have had some trouble with the above. The VS2015 seems not to install any more. A basic stock Win 11 install with Python 3.10 or 3.11 is fine getting everything on our requirements, but freezing with PyInstaller may have trouble finding certain 'api-***.dll' files. I am now trying to figure this out with my latest dev machine as of 2024-01. If you try this, let me know what you find out! </p>
-<h3 id="additional_windows">Additional Windows Info<a class="headerlink" href="#additional_windows" title="Permanent link">&para;</a></h3>
-<p>This does not matter much any more, but in the old days, building modules like lz4 and lxml was a complete nightmare, and hooking up Visual Studio was even more difficult. <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">This page</a> has a lot of prebuilt binaries--I have found it very helpful many times.</p>
-<p>I have a fair bit of experience with Windows python, so send me a mail if you need help.</p>
 <h2 id="my_code">My Code<a class="headerlink" href="#my_code" title="Permanent link">&para;</a></h2>
-<p>I use Windows and Linux, but I have much more experience with Windows, and the program is most stable and clean there. I have very little experience with macOS, but I appreciate bug reports for any platform.</p>
-<p>My coding style is unusual and unprofessional. Everything is pretty much hacked together. I'm constantly throwing new code together and then cleaning and overhauling it down the line. If you are interested in how things work, please do look through the source and ask me if you don't understand something.</p>
-<p>I work strictly alone, however. While I am very interested in bug reports or suggestions for good libraries to use, I am not looking for pull requests or suggestions on refactoring. I know a lot of things are a mess. Everything I do is <a href="https://github.com/sirkris/WTFPL/blob/master/WTFPL.md">WTFPL</a>, so feel free to fork and play around with things on your end as much as you like.</p>
+<p>I use Windows and Linux, but I have more experience with Windows, and the program is generally most stable and clean there. I have very little experience with macOS, but I appreciate bug reports for any platform.</p>
+<p>My coding style is unusual and unprofessional. Everything is pretty much hacked together. I'm constantly throwing new code together and then cleaning and overhauling it down the line. If you are interested in how things work, look through the source and please do ask me if you don't understand something.</p>
+<p>I work strictly alone, however. While I am very interested in bug reports or suggestions for good libraries to use, I am not looking for pull requests or suggestions on refactoring. I know a lot of things are a mess. Everything I do is <a href="https://github.com/sirkris/WTFPL/blob/master/WTFPL.md">WTFPL</a>, so you can fork and play around with things on your end as much as you like.</p>
+<p><a href="https://deepwiki.com/hydrusnetwork/hydrus">This DeepWiki AI Crawl</a> of the Hydrus Github repository is not totally comprehensive, but I was impressed with how generally accurate it is. It attributes more thought on my part than actually happened, hahaha, but you might like to check it if you want to poke around.</p>
 
 
 
@@ -3101,7 +3593,7 @@ choco install -y windows-sdk-10.0
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 6, 2025 20:24:15 UTC">August 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 11, 2026 20:27:32 UTC">March 11, 2026</span>
   </span>
 
     
@@ -3146,7 +3638,8 @@ choco install -y windows-sdk-10.0
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -3156,7 +3649,7 @@ choco install -y windows-sdk-10.0
       
     
     <a href="https://github.com/hydrusnetwork/hydrus" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
     
@@ -3167,7 +3660,7 @@ choco install -y windows-sdk-10.0
       
     
     <a href="https://x.com/hydrusnetwork" target="_blank" rel="noopener" title="x.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
     </a>
   
     
@@ -3178,7 +3671,15 @@ choco install -y windows-sdk-10.0
       
     
     <a href="https://hydrus.tumblr.com/" target="_blank" rel="noopener" title="hydrus.tumblr.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M309.9 480.3c-13.6 14.5-50 31.7-97.4 31.7-120.8 0-147-88.8-147-140.6v-144H18c-5.5 0-10-4.5-10-10v-68c0-7.2 4.5-13.6 11.3-16 62-21.8 81.5-76 84.3-117.1.8-11 6.5-16.3 16.1-16.3h70.9c5.5 0 10 4.5 10 10v115.2h83c5.5 0 10 4.4 10 9.9v81.7c0 5.5-4.5 10-10 10h-83.4V360c0 34.2 23.7 53.6 68 35.8 4.8-1.9 9-3.2 12.7-2.2 3.5.9 5.8 3.4 7.4 7.9l22 64.3c1.8 5 3.3 10.6-.4 14.5"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.9 480.3c-13.6 14.5-50 31.7-97.4 31.7-120.8 0-147-88.8-147-140.6v-144H18c-5.5 0-10-4.5-10-10v-68c0-7.2 4.5-13.6 11.3-16 62-21.8 81.5-76 84.3-117.1.8-11 6.5-16.3 16.1-16.3h70.9c5.5 0 10 4.5 10 10v115.2h83c5.5 0 10 4.4 10 9.9v81.7c0 5.5-4.5 10-10 10h-83.4V360c0 34.2 23.7 53.6 68 35.8 4.8-1.9 9-3.2 12.7-2.2 3.5.9 5.8 3.4 7.4 7.9l22 64.3c1.8 5 3.3 10.6-.4 14.5"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:hydrus_dev@proton.me" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
     </a>
   
     
@@ -3186,7 +3687,7 @@ choco install -y windows-sdk-10.0
     
     
     <a href="mailto:hydrus.admin@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
     </a>
   
     
@@ -3197,7 +3698,7 @@ choco install -y windows-sdk-10.0
       
     
     <a href="https://discord.gg/wPHPCUZ" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
     </a>
   
     
@@ -3208,7 +3709,7 @@ choco install -y windows-sdk-10.0
       
     
     <a href="https://www.patreon.com/hydrus_dev" target="_blank" rel="noopener" title="www.patreon.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
     </a>
   
 </div>
@@ -3225,10 +3726,11 @@ choco install -y windows-sdk-10.0
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "content.tabs.link", "navigation.top", "search.suggest", "content.code.annotate", "navigation.instant", "content.action.edit"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "content.tabs.link", "navigation.top", "search.suggest", "content.code.annotate", "navigation.instant", "content.action.edit"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
