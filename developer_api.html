@@ -7030,7 +7030,7 @@ Accept: application/json
 </ul>
 </dd>
 </dl>
-<div class="highlight"><span class="filename">Example request for 16 files (system:limit=16) in the inbox with tags "blue eyes", "blonde hair", and "кино"</span><pre><span></span><code>/get_files/search_files?tags=%5B%22blue%20eyes%22%2C%20%22blonde%20hair%22%2C%20%22%5Cu043a%5Cu0438%5Cu043d%5Cu043e%22%2C%20%22system%3Ainbox%22%2C%20%22system%3Alimit%3D16%22%5D
+<div class="highlight"><span class="filename">Example request for 16 files (system:limit=16) in the inbox with tags &quot;blue eyes&quot;, &quot;blonde hair&quot;, and &quot;кино&quot;</span><pre><span></span><code>/get_files/search_files?tags=%5B%22blue%20eyes%22%2C%20%22blonde%20hair%22%2C%20%22%5Cu043a%5Cu0438%5Cu043d%5Cu043e%22%2C%20%22system%3Ainbox%22%2C%20%22system%3Alimit%3D16%22%5D
 </code></pre></div>
 <p>If the access key's permissions only permit search for certain tags, at least one positive whitelisted/non-blacklisted tag must be in the "tags" list or this will 403. Tags can be prepended with a hyphen to make a negated tag (e.g. "-green eyes"), but these will not be checked against the permissions whitelist.</p>
 <p>Wildcards and namespace searches are supported, so if you search for 'character:sam*' or 'series:*', this will be handled correctly clientside.</p>
